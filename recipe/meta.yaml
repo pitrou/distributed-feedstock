@@ -10,7 +10,7 @@ source:
   md5: 98c6ec894386a93ffd16718d04b79671
 
 build:
-  number: 0
+  number: 1
   entry_points:
     - dcenter=distributed.cli.dcenter:go
     - dscheduler=distributed.cli.dscheduler:go
@@ -21,6 +21,7 @@ build:
 requirements:
   build:
     - python
+    - setuptools
     - tornado >=4.2
     - toolz
     - msgpack-python
