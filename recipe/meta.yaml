@@ -1,4 +1,4 @@
-{% set version = "1.10.1" %}
+{% set version = "1.10.2" %}
 
 package:
   name: distributed
@@ -7,10 +7,10 @@ package:
 source:
   fn: distributed-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/d/distributed/distributed-{{ version }}.tar.gz
-  md5: 98c6ec894386a93ffd16718d04b79671
+  md5: 71339192ed317b2989a061dc81657fbe
 
 build:
-  number: 1
+  number: 0
   entry_points:
     - dcenter=distributed.cli.dcenter:go
     - dscheduler=distributed.cli.dscheduler:go
@@ -22,18 +22,6 @@ requirements:
   build:
     - python
     - setuptools
-    - tornado >=4.2
-    - toolz
-    - msgpack-python
-    - cloudpickle >=0.2.1
-    - dask >=0.9.0
-    - click
-    - boto3
-    - s3fs
-    - locket
-    - six
-    - tblib
-    - psutil
 
   run:
     - python
@@ -49,7 +37,7 @@ requirements:
     - six
     - tblib
     - psutil
-    - bokeh  # [not py26]
+    - bokeh
 
 test:
   imports:
