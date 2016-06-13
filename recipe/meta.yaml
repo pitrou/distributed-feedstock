@@ -1,4 +1,4 @@
-{% set version = "1.10.2" %}
+{% set version = "1.11.0" %}
 
 package:
   name: distributed
@@ -7,15 +7,14 @@ package:
 source:
   fn: distributed-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/d/distributed/distributed-{{ version }}.tar.gz
-  md5: 71339192ed317b2989a061dc81657fbe
+  md5: 567479ac0cc13ee3a7f45a1af19d346f
 
 build:
   number: 0
   entry_points:
-    - dcenter=distributed.cli.dcenter:go
-    - dscheduler=distributed.cli.dscheduler:go
-    - dcluster=distributed.cli.dcluster:start
-    - dworker=distributed.cli.dworker:go
+    - dask-scheduler=distributed.cli.dask_scheduler:go
+    - dask-ssh=distributed.cli.dask_ssh:go
+    - dask-worker=distributed.cli.dask_worker:go
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
@@ -25,19 +24,19 @@ requirements:
 
   run:
     - python
-    - tornado >=4.2
-    - toolz
-    - msgpack-python
-    - cloudpickle >=0.2.1
-    - dask >=0.9.0
-    - click
+    - bokeh
     - boto3
-    - s3fs
+    - click
+    - cloudpickle >=0.2.1
+    - dask >=0.10.0
     - locket
+    - msgpack-python
+    - psutil
+    - s3fs
     - six
     - tblib
-    - psutil
-    - bokeh
+    - toolz
+    - tornado >=4.2
 
 test:
   imports:
@@ -49,10 +48,9 @@ test:
     - distributed.diagnostics
     - distributed.http
   commands:
-    - dcenter --help
-    - dscheduler --help
-    - dcluster --help
-    - dworker --help
+    - dask-scheduler --help
+    - dask-ssh --help
+    - dask-worker --help
 
 about:
   home: http://distributed.readthedocs.io/en/latest/
