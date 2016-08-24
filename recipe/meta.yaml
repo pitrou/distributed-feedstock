@@ -1,4 +1,4 @@
-{% set version = "1.11.3" %}
+{% set version = "1.12.0" %}
 
 package:
   name: distributed
@@ -7,7 +7,7 @@ package:
 source:
   fn: distributed-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/d/distributed/distributed-{{ version }}.tar.gz
-  md5: 4fca14c8556b7c54016b0f5222f9ac36
+  md5: b56f05a7b17e427309a5afdf9e366b23
 
 build:
   number: 0
@@ -15,6 +15,8 @@ build:
     - dask-scheduler=distributed.cli.dask_scheduler:go
     - dask-ssh=distributed.cli.dask_ssh:go
     - dask-worker=distributed.cli.dask_worker:go
+    - dask-remote=distributed.cli.dask_remote:go
+    - dask-submit=distributed.cli.dask_submit:go
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
