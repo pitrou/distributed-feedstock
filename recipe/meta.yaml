@@ -1,4 +1,4 @@
-{% set version = "1.13.0" %}
+{% set version = "1.13.1" %}
 
 package:
   name: distributed
@@ -7,7 +7,7 @@ package:
 source:
   fn: distributed-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/d/distributed/distributed-{{ version }}.tar.gz
-  md5: 298b2f0adeece38fd3da35bc9a890b34
+  md5: 4eb0cfc5b251cb016e17e98fafd2b3e4
 
 build:
   number: 0
@@ -39,6 +39,7 @@ requirements:
     - tblib
     - toolz >=0.7.4
     - tornado >=4.2
+    - zict
 
 test:
   imports:
