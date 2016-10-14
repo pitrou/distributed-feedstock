@@ -1,4 +1,4 @@
-{% set version = "1.13.2" %}
+{% set version = "1.13.3" %}
 
 package:
   name: distributed
@@ -7,7 +7,7 @@ package:
 source:
   fn: distributed-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/d/distributed/distributed-{{ version }}.tar.gz
-  md5: ebe3ea40a1d13e44a95249403929269c
+  md5: 7071d2d5e69ff4ef1b85020f755d2914
 
 build:
   number: 0
@@ -26,15 +26,15 @@ requirements:
 
   run:
     - python
-    - bokeh >=0.12.1
+    - bokeh >=0.12.3
     - boto3
-    - click
+    - click >=6.6
     - cloudpickle >=0.2.1
-    - dask >=0.11.0
+    - dask >=0.11.1
     - locket
     - msgpack-python
     - psutil
-    - s3fs >=0.0.6
+    - s3fs >=0.0.7
     - six
     - tblib
     - toolz >=0.7.4
