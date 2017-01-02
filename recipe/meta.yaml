@@ -32,7 +32,8 @@ requirements:
     - cloudpickle >=0.2.2
     - dask >=0.13.0
     - locket
-    - msgpack-python
+    # - msgpack-python
+    - pandas >=0.19.0
     - psutil
     - s3fs >=0.0.8
     - six
