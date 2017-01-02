@@ -11,6 +11,18 @@ Summary: Distributed computing
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/distributed-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/distributed-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/distributed-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/distributed-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/distributed-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/distributed-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/distributed/badges/version.svg)](https://anaconda.org/conda-forge/distributed)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/distributed/badges/downloads.svg)](https://anaconda.org/conda-forge/distributed)
+
 Installing distributed
 ======================
 
@@ -31,7 +43,6 @@ It is possible to list all of the versions of `distributed` available on your pl
 ```
 conda search distributed --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -67,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/distributed-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/distributed-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/distributed-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/distributed-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/distributed-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/distributed-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/distributed/badges/version.svg)](https://anaconda.org/conda-forge/distributed)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/distributed/badges/downloads.svg)](https://anaconda.org/conda-forge/distributed)
 
 
 Updating distributed-feedstock
