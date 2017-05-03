@@ -59,6 +59,7 @@ test:
 about:
   home: http://distributed.readthedocs.io/en/latest/
   license: BSD 3-Clause
+  license_file: LICENSE.txt
   summary: 'Distributed computing'
 
 extra:
