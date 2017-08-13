@@ -60,7 +60,15 @@ about:
   home: http://distributed.readthedocs.io/en/latest/
   license: BSD 3-Clause
   license_file: LICENSE.txt
+  license_family: BSD
   summary: 'Distributed computing with Dask'
+  description: |
+    Distributed is a lightweight library for distributed computing in Python.
+    It extends both the concurrent.futures and dask APIs to moderate sized
+    clusters.
+  doc_url: http://distributed.readthedocs.org
+  doc_source_url: https://github.com/dask/distributed/blob/master/docs/source/index.rst
+  dev_url: https://github.com/dask/distributed
 
 extra:
   recipe-maintainers:
