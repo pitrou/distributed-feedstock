@@ -37,6 +37,7 @@ requirements:
     - tornado >=4.4
     - zict >=0.1.2
     - sortedcontainers
+    - futures  # [py2k]
 
 test:
   imports:
