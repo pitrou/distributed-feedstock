@@ -7,7 +7,7 @@ Package license: BSD 3-Clause
 
 Feedstock license: BSD 3-Clause
 
-Summary: Distributed computing
+Summary: Distributed computing with Dask
 
 
 
