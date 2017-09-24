@@ -1,4 +1,4 @@
-{% set version = "1.18.3" %}
+{% set version = "1.19.0" %}
 
 package:
   name: distributed
@@ -7,7 +7,7 @@ package:
 source:
   fn: distributed-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/d/distributed/distributed-{{ version }}.tar.gz
-  sha256: 214e0febae46bb728946dbb26a5513880a1290ac5ca748479f7c5f2fbe64145f
+  sha256: 595644165975ffb5b286f2f5ac04e6423ad3152b82d2adf7df1fa63a35760eee
 
 build:
   number: 0
@@ -36,7 +36,7 @@ requirements:
     - tblib
     - toolz >=0.7.4
     - tornado >=4.5.1
-    - zict >=0.1.2
+    - zict >=0.1.3
     - sortedcontainers
     - futures  # [py2k]
 
