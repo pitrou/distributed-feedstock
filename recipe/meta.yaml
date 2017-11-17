@@ -1,4 +1,4 @@
-{% set version = "1.19.3" %}
+{% set version = "1.20.0" %}
 
 package:
   name: distributed
@@ -7,7 +7,7 @@ package:
 source:
   fn: distributed-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/d/distributed/distributed-{{ version }}.tar.gz
-  sha256: 369f377c7243d194e52b1ee8f6d0e9b4fde34aff4c6be14872b19b19ee9767e0 
+  sha256: 01f850df6ff2bfc0b04585b395799f0b7e5522820ffd0cd00c0723f419765196
 
 build:
   number: 0
@@ -29,7 +29,7 @@ requirements:
     - python
     - click >=6.6
     - cloudpickle >=0.2.2
-    - dask-core >=0.15.2
+    - dask-core >=0.16.0
     - msgpack-python
     - psutil
     - six
@@ -44,8 +44,10 @@ test:
   imports:
     - distributed
     - distributed.cli
+    - distributed.comm
+    - distributed.deploy
     - distributed.diagnostics
-    - distributed.http
+    - distributed.protocol
   commands:
     - dask-scheduler --help
     - dask-ssh --help
