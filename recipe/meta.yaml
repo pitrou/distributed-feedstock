@@ -35,6 +35,7 @@ requirements:
     - msgpack-python
     - psutil
     - pyyaml
+    - singledispatch  # [py2k]
     - six
     - sortedcontainers
     - tblib
