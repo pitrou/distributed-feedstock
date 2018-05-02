@@ -1,4 +1,4 @@
-{% set version = "1.21.6" %}
+{% set version = "1.21.7" %}
 
 package:
   name: distributed
@@ -7,7 +7,7 @@ package:
 source:
   fn: distributed-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/d/distributed/distributed-{{ version }}.tar.gz
-  sha256: 0fa6057c9b7aa0235ba240e7eb66ffbf5fc9d25a5c4b5cf1169d93bc582b8687
+  sha256: 16d2dedb43e6cdbc0ccc3e31bee71d05ae111d2d30db841eb0f64e3bd5eb8c88
 
 build:
   number: 0
