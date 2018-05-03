@@ -14,14 +14,16 @@ Summary: Distributed computing with Dask
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/distributed-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/distributed-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/distributed-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/distributed-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/distributed-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/distributed-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/distributed-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/distributed-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/distributed-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/distributed-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/distributed-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/distributed-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/distributed/badges/version.svg)](https://anaconda.org/conda-forge/distributed)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/distributed/badges/downloads.svg)](https://anaconda.org/conda-forge/distributed)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-distributed-green.svg)](https://anaconda.org/conda-forge/distributed) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/distributed.svg)](https://anaconda.org/conda-forge/distributed) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/distributed.svg)](https://anaconda.org/conda-forge/distributed) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/distributed.svg)](https://anaconda.org/conda-forge/distributed) |
 
 Installing distributed
 ======================
