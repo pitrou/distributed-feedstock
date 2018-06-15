@@ -1,4 +1,4 @@
-{% set version = "1.21.8" %}
+{% set version = "1.22.0" %}
 
 package:
   name: distributed
@@ -7,7 +7,7 @@ package:
 source:
   fn: distributed-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/d/distributed/distributed-{{ version }}.tar.gz
-  sha256: d80c82fc402406703ad7756fc7ce630311c57d883c23ac0021fdfeb674995362
+  sha256: 73b992604118c1489f621586209a50c75d1df146e7eccbffbc790ac028a97ca4
 
 build:
   number: 0
@@ -30,7 +30,7 @@ requirements:
     - click >=6.6
     - cloudpickle >=0.2.2
     - cytoolz >=0.7.4
-    - dask-core >=0.17.0
+    - dask-core >=0.18.0
     - futures  # [py2k]
     - msgpack-python
     - psutil
