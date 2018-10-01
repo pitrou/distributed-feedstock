@@ -9,6 +9,9 @@ Feedstock license: BSD 3-Clause
 
 Summary: Distributed computing with Dask
 
+Distributed is a lightweight library for distributed computing in Python.
+It extends both the concurrent.futures and dask APIs to moderate sized
+clusters.
 
 
 Current build status
