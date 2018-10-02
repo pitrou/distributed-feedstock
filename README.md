@@ -9,13 +9,15 @@ Feedstock license: BSD 3-Clause
 
 Summary: Distributed computing with Dask
 
+Distributed is a lightweight library for distributed computing in Python.
+It extends both the concurrent.futures and dask APIs to moderate sized
+clusters.
 
 
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/distributed-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/distributed-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/distributed-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/distributed-feedstock)
+[![Linux,OSX](https://img.shields.io/circleci/project/github/conda-forge/distributed-feedstock/master.svg?label=Linux,OSX)](https://circleci.com/gh/conda-forge/distributed-feedstock)
 [![Windows](https://img.shields.io/appveyor/ci/conda-forge/distributed-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/distributed-feedstock/branch/master)
 
 Current release info

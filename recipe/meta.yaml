@@ -5,12 +5,11 @@ package:
   version: "{{ version }}"
 
 source:
-  fn: distributed-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/d/distributed/distributed-{{ version }}.tar.gz
   sha256: 803af56bdc755bcb351bd93b25c4f4ded48d684aa9e591d877f751080ad2f898
 
 build:
-  number: 0
+  number: 1
   entry_points:
     - dask-scheduler=distributed.cli.dask_scheduler:go
     - dask-ssh=distributed.cli.dask_ssh:go
@@ -18,7 +17,7 @@ build:
     - dask-remote=distributed.cli.dask_remote:go
     - dask-submit=distributed.cli.dask_submit:go
     - dask-mpi=distributed.cli.dask_mpi:go
-  script: python -m pip install --no-deps --ignore-installed .
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
   host:
