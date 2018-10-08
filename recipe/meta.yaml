@@ -9,7 +9,7 @@ source:
   sha256: 2d48a4de280fd7243ca76f9b12db5fe2486fc89dcdb510c77fa51f51733a04cc
 
 build:
-  number: 0
+  number: 1000
   entry_points:
     - dask-scheduler=distributed.cli.dask_scheduler:go
     - dask-ssh=distributed.cli.dask_ssh:go
@@ -76,3 +76,4 @@ extra:
     - jcrist
     - martindurant
     - jakirkham
+    - marcelotrevisani
