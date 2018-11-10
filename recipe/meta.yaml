@@ -32,7 +32,7 @@ requirements:
     - dask-core >=0.18.0
     - futures  # [py2k]
     - msgpack-python
-    - psutil
+    - psutil >=5.0
     - pyyaml
     - singledispatch  # [py2k]
     - six
