@@ -121,5 +121,7 @@ Feedstock Maintainers
 * [@marcelotrevisani](https://github.com/marcelotrevisani/)
 * [@martindurant](https://github.com/martindurant/)
 * [@mrocklin](https://github.com/mrocklin/)
+* [@ogrisel](https://github.com/ogrisel/)
 * [@pitrou](https://github.com/pitrou/)
+* [@tomaugspurger](https://github.com/tomaugspurger/)
 
