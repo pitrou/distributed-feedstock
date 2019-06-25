@@ -1,4 +1,4 @@
-{% set version = "1.28.1" %}
+{% set version = "2.0.0" %}
 
 package:
   name: distributed
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/d/distributed/distributed-{{ version }}.tar.gz
-  sha256: 3bd83f8b7eb5938af5f2be91ccff8984630713f36f8f66097e531a63f141c48a
+  sha256: 3c45419bb4224a55f3104a0c8acaf45d300da867b99ed1e6f8b8a29bad03b5c7
 
 build:
   number: 0
@@ -18,23 +18,22 @@ build:
     - dask-submit=distributed.cli.dask_submit:go
     - dask-mpi=distributed.cli.dask_mpi:go
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  noarch: python
 
 requirements:
   host:
-    - python
+    - python >=3.5
     - pip
 
   run:
-    - python
+    - python >=3.5
     - click >=6.6
     - cloudpickle >=0.2.2
     - cytoolz >=0.7.4
-    - dask-core >=0.18.0
-    - futures  # [py2k]
+    - dask-core >=2
     - msgpack-python
     - psutil >=5.0
     - pyyaml
-    - singledispatch  # [py2k]
     - six
     - sortedcontainers !=2.0.0,!=2.0.1
     - tblib
@@ -65,7 +64,7 @@ about:
     Distributed is a lightweight library for distributed computing in Python.
     It extends both the concurrent.futures and dask APIs to moderate sized
     clusters.
-  doc_url: http://distributed.readthedocs.org
+  doc_url: https://distributed.dask.org
   doc_source_url: https://github.com/dask/distributed/blob/master/docs/source/index.rst
   dev_url: https://github.com/dask/distributed
 
