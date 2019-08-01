@@ -9,14 +9,13 @@ source:
   sha256: 1101d441137d5aa345cd17c136f5f2f0ea186ee0857dfb0c6c12a6e262e2de35
 
 build:
-  number: 0
+  number: 1
   entry_points:
     - dask-scheduler=distributed.cli.dask_scheduler:go
     - dask-ssh=distributed.cli.dask_ssh:go
     - dask-worker=distributed.cli.dask_worker:go
     - dask-remote=distributed.cli.dask_remote:go
     - dask-submit=distributed.cli.dask_submit:go
-    - dask-mpi=distributed.cli.dask_mpi:go
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
   noarch: python
 
