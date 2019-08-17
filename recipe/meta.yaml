@@ -1,4 +1,4 @@
-{% set version = "2.2.0" %}
+{% set version = "2.3.0" %}
 
 package:
   name: distributed
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/d/distributed/distributed-{{ version }}.tar.gz
-  sha256: 1101d441137d5aa345cd17c136f5f2f0ea186ee0857dfb0c6c12a6e262e2de35
+  sha256: 94b7c494abfecad0b1fcd325365f6c804c2a6ea9ffc510bb9f368d33be338b96
 
 build:
-  number: 1
+  number: 0
   entry_points:
     - dask-scheduler=distributed.cli.dask_scheduler:go
     - dask-ssh=distributed.cli.dask_ssh:go
